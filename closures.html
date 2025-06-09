@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = 10;
+        alert(x);
+        function factor(times){
+            function multipliler(num){
+                return num * times;
+            }
+            return multipliler;
+        }
+        let timesTwo = factor(2);
+        let timesThree = factor(3);
+        let ans = timesThree(5);
+        alert(ans);
+    </script>
+</body>
+</html>
